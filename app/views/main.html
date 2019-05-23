@@ -1,0 +1,14 @@
+<div ng-controller="MainCtrl">
+  <article class="row"  ng-repeat="p in posts">
+    <h1>{{p.title}}</h1>
+    <h2>{{p.subtitle}}</h2>
+    <div ng-repeat="c in p.content">
+        <div ng-switch="c.type">
+            <img ng-switch-when="image" src="/{{c.value}}" height="19" width="19" /> 
+            <p class="text-justify" ng-switch-when="text">
+              {{p.value}}
+            </p>             
+          </div>
+    </div>
+  </article>
+</div>

@@ -1,0 +1,40 @@
+[
+    {
+        "title":"TAG 1",
+        "subtitle":"Zustieg - Materialtransport - Einführung und Übung",
+        "content":
+        [
+            {"type":"text","value":"Treffpunkt ist am Morgen der Parkplatz hinter der Kirche in Krimml. Materialverladung und Transfer mit dem Hüttentaxi."},
+            {"type":"text","value":"Zustieg ab Materialseilbahn bzw. Innere Keesalm Richtung Warnsdorfer Hütte (500 Hm ca. 1,5-2 h). Lager- bzw. Zimmerbezug, kurze Rast sowie Programmbesprechung der Tage."},
+            {"type":"text","value":"Im nahegelegenen Klettergarten werden die ersten Seiltechnikübungen durchgemacht (Abseilen, Knotenkunde, Anseilmethoden, Gletscherseilschaft, Fixpunkte im Fels)."},
+            {"type":"text","value":"Abends Orientierung, Gletscher- und Wetterkunde."}
+        ]
+    },
+    {
+        "title":"TAG 2",
+        "subtitle":"Übungstag",
+        "content":
+        [
+            {"type":"text","value":"Heute steht die Technik und Taktik beim Begehen von Gletschern sowie die Spaltenbergung (Selbst- und Kameradenrettung) am Programm."},
+            {"type":"text","value":"Hintersichert versuchst du, den Sturz deiner Kollegin / deines Kollegen in die Gletscherspalte zu „halten“ sowie diese/n aus der Spalte mit Hilfe der Losen Rolle (eine spezielle Rettungstechnik) zu bergen."},
+            {"type":"text","value":"Die eigene Rettung aus der Spalte mittels Prusik und Münchhausen wirst du ebenfalls üben."},
+            {"type":"text","value":"Abends Wiederholung der Tagesinhalte, Seil- und Sicherungstheorie."},
+            {"type":"image","value":"content/tour_bild.jpg"},
+            {"type":"image","value":"content/tour_bild2.jpg"},
+            {"type":"image","value":"content/tour_bild3.jpg"}
+        ]
+    },
+    {
+        "title":"TAG 3",
+        "subtitle":"Übungstag",
+        "content":
+        [
+            {"type":"text","value":"Heute suchen wir uns einen Ort mit blanken Eisflächen, wo wir das Gehen mit Steigeisen und Pickel sowie das Erstellen von Fixpunkten in Eis und Firn üben werden."},
+            {"type":"image","value":"content/tour_bild4.jpg"},
+            {"type":"text","value":"Wenn noch Zeit bleibt, versuchen wir uns an einem Eisaufschwung im Eisklettern."},
+            {"type":"text","value":"Die Orientierung im Gelände sowie eine Wiederholung der Inhalte der letzten drei Tage ist allgegenwärtiger Inhalt dieses Tages."},
+            {"type":"text","value":"Abends selbständige Tourenplanung für den morgigen Tourentag."},            
+            {"type":"image","value":"content/tour_bild5.jpg"}
+        ]
+    }
+]
