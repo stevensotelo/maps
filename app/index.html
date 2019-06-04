@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Pronósticos climáticos y agroclimáticos</title>
+  <title>Maps</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width">
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
@@ -25,56 +25,32 @@
     <![endif]-->
 </head>
 
-<body ng-app="mapsApp">
+<body ng-app="mapsApp" class="map_background">
+            
+      <div class="container-fluid">
+          <div ng-view="">
+            </div>
+      </div>
+      
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/popper.js/dist/umd/popper.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/d3/d3.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
 
-  <div class="container">
+    <!-- build:js({.tmp,app}) scripts/scripts.js -->
+    <script src="scripts/app.js"></script>
+    <script src="scripts/services/contentfactory.js"></script>
+    <script src="scripts/controllers/main.js"></script>
+    <!-- endbuild -->
 
-    <!-- The justified navigation menu is meant for single line per list item.
-           Multiple lines will require custom code not provided by Bootstrap. -->
-    <div class="masthead">
-      <h1 class="text-center">
-        <a href="#/"><img alt="" src="/images/banner.png" /></a>
-      </h1>
-      <br />
-      <nav>
-        <ul class="nav nav-justified">
-          <li><a ng-href="#/clima">Clima</a></li>
-          <li><a ng-href="#/cultivo/arroz">Arroz</a></li>
-          <li><a ng-href="#/cultivo/maiz">Maíz</a></li>
-        </ul>
-      </nav>
-    </div>
-    <div ng-view=""></div>
-    <!-- Site footer -->
-    <footer class="footer">
-      <p></p>
-    </footer>
+  </body>
 
-  </div>
-  <!-- /container -->
-  
-  <!-- build:js(.) scripts/vendor.js -->
-  <!-- bower:js -->
-  <script src="bower_components/jquery/dist/jquery.js"></script>
-  <script src="bower_components/angular/angular.js"></script>
-  <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
-  <script src="bower_components/angular-animate/angular-animate.js"></script>
-  <script src="bower_components/angular-cookies/angular-cookies.js"></script>
-  <script src="bower_components/angular-route/angular-route.js"></script>
-  <script src="bower_components/d3/d3.js"></script>
-  <!-- endbower -->
-  <!-- endbuild -->
-
-  <!-- build:js({.tmp,app}) scripts/scripts.js -->
-  <script src="scripts/app.js"></script>
-  <script src="scripts/controllers/main.js"></script>
-  <!-- endbuild -->
-  <script>
-    $(".nav a").on("click", function(){
-      $(".nav").find(".active").removeClass("active");
-      $(this).parent().addClass("active");
-    });
-  </script>
-</body>
-
-</html>
+  </html>

@@ -8,6 +8,6 @@
  * Controller of the mapsApp
  */
 angular.module('mapsApp')
-  .controller('MainCtrl', function () {
-    
+  .controller('MainCtrl', function (contentFactory,$scope) {
+    contentFactory.list($scope);
   });

@@ -8,17 +8,19 @@
  * Factory in the usaidMockupsApp.
  */
 angular.module('mapsApp')
-  .factory('contentFactory',['$http','config','CSV2Json', function ($http,config,CSV2Json) {    
+  .factory('contentFactory',function ($http,config) {    
     var dataFactory = {};
-
-    dataFactory.listar = function () {
-     
-      var items = $http.get(config.data_clima).then(function(response){        
-        return response.data;
-      });      
-      
-      return items;
+    var url = 'data/content.json';
+    
+    dataFactory.list = function (scope) {
+      $http.get(url).success(function (data) {
+        scope.posts = data
+      })
+      .error(function (data) {
+        console.log(data);
+        console.log("there was an error");
+      });
     }
     
     return dataFactory;
-  }]);
+  });

@@ -15,6 +15,7 @@ angular
     'ngRoute'
   ])
   .value('config',{
+    data:'data/content.json'
   })
   .config(function ($routeProvider) {
     $routeProvider

@@ -1,14 +1,25 @@
 <div ng-controller="MainCtrl">
-  <article class="row"  ng-repeat="p in posts">
-    <h1>{{p.title}}</h1>
-    <h2>{{p.subtitle}}</h2>
-    <div ng-repeat="c in p.content">
-        <div ng-switch="c.type">
-            <img ng-switch-when="image" src="/{{c.value}}" height="19" width="19" /> 
-            <p class="text-justify" ng-switch-when="text">
-              {{p.value}}
-            </p>             
+  <article class="row post" ng-repeat="p in posts">
+    <div class="col-sm-3">
+      <div class="card">
+        <div class="card-header">
+            <h2 class="card-title">{{p.title}}</h1>
+        </div>
+        <div class="card-body">          
+            <h5 class="card-title">{{p.subtitle}}
+          </h2>
+          <div ng-repeat="c in p.content">
+            <div ng-switch="c.type">
+              <p class="card-text text-justify" ng-switch-when="text">
+                {{c.value}}
+                <br />
+                <br />
+              </p>
+              <img ng-switch-when="image" src="images/{{c.value}}" class="img-thumbnail" />
+            </div>
           </div>
+        </div>
+      </div>
     </div>
   </article>
 </div>
